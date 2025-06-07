@@ -60,15 +60,12 @@ Follow these steps to run the project on your local machine:
 `cd priyanshu-portfolio` 
 
 3. **Install dependencies**
-
 `npm install`
 
 4. **Start the development server**
-
 `npm start`
 
 5. **Visit in browser**
-
 `http://localhost:3000`
 
 🌐 Live Demo
