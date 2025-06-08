@@ -34,8 +34,8 @@
 }
 
 .logo-img {
-  height: 40px;
-  width: auto;
+margin-top: 80px;
+height: 240px;
 }
 
 .menu-icon {
@@ -65,12 +65,12 @@
 
 .nav-links:hover,
 .nav-links.active {
-  /* background-color: #555; */
-  color: aqua;
+  background-color: #555;
+  color: rgb(26, 162, 241);
 }
 
 /* Responsive: Mobile view */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .menu-icon {
     display: block;
   }
@@ -101,7 +101,9 @@
   .nav-links {
     font-size: 20px;
   }
-
+  .navbar-logo {
+    margin-left: 0px;
+  }
   .overlay {
     position: fixed;
     top: 0;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import logo from '../../assets/logo.jpg'; 
+import logo from '../../assets/logo.png'; 
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,7 +13,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <NavLink to="/" className="navbar-logo" onClick={closeMenu}> Mylogo
+        <NavLink to="/" className="navbar-logo" onClick={closeMenu}> 
+         <img src={logo} alt="Logo" className="logo-img" />
         </NavLink>
 
         <div className="menu-icon" onClick={toggleMenu}>
