@@ -6,7 +6,7 @@
 
 .navbar {
   background: linear-gradient(to right, #013220, #001f3f);
-  height: 80px;
+  height: 85px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -34,7 +34,7 @@
 }
 
 .logo-img {
-margin-top: 15px;
+margin-top: 10px;
 height: 80px;
 }
 
