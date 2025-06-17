@@ -98,8 +98,11 @@ const Resume = () => {
       <section className="resume-section">
         <h2><FaProjectDiagram className="icon" /> Projects</h2>
         <ul>
-          <li><strong>Capturer – Photography Portfolio</strong><br />HTML, CSS, JS, Bootstrap; Carousel, Gallery, Slider, Deployed via Vercel</li>
-          <li><strong>Personal Portfolio</strong><br />HTML, CSS, JS, Bootstrap; Clean & responsive UI, Hosted on GitHub Pages</li>
+          <li><a href="https://capturer-moments.vercel.app/"><strong>Capturer – Photography Portfolio</strong></a><br />HTML, CSS, JS, Bootstrap; Carousel, Gallery, Slider, Deployed via Vercel</li>
+          
+          <li><a href="https://satyasaadhika.github.io/"><strong>Personal Portfolio</strong></a><br />HTML, CSS, JS, Bootstrap; Clean & responsive UI, Hosted on GitHub Pages</li>
+
+           <li><a href="https://kingsukh-guest-house-iota.vercel.app/"><strong>Kingsukh Guest House </strong></a><br />HTML, CSS, JS, React; Clean & responsive UI, Deployed via vercel</li>
         </ul>
       </section>
 
@@ -125,14 +128,6 @@ const Resume = () => {
         <p><FaLinkedin /> <a href="https://www.linkedin.com/in/satyasaadhika/">LinkedIn</a></p>
         <p><FaGithub /> <a href="https://github.com/satyasaadhika">GitHub</a></p>
       </section>
-
-      {/* Embedded PDF Viewer */}
-      {/* <div className="pdf-viewer">
-        <iframe
-          src="/Priyanshu_Resume.pdf"
-          title="Priyanshu Maurya Resume PDF Preview"
-        />
-      </div> */}
     </div>
   );
 };
