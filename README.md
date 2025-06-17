@@ -13,6 +13,31 @@ This website showcases my projects, skills, certificates, blog, and contact info
 - ✅ Built using modular components
 - ✅ Easy to maintain and scalable
 
+### Interactive Design
+- **Smooth Transitions**: Enjoy seamless transitions between sections for a polished browsing experience.
+
+- **Hover Effects**: Engage with interactive hover effects on project cards and navigation links.
+
+### Dynamic Content
+- **Project Showcase**: Explore my projects with detailed descriptions and links to live demos and GitHub repositories.
+
+- **Skills Section**: Discover my skills and technologies with interactive icons and tooltips for additional information.
+
+### Responsive Layout
+- **Mobile Compatibility**: Experience a fully responsive design that looks great on all devices, from desktops to smartphones.
+
+## Technologies Used
+- **React.js**: Powering the core of the website, React.js enables dynamic and interactive user interfaces.
+
+- **CSS Animations**: Utilizing CSS animations and transitions for smooth and engaging effects.
+
+- **React Spring**: Incorporating React Spring for advanced animations and transitions.
+
+- **React Icons**: Integrating React Icons for scalable vector icons throughout the website.
+
+## Deployment
+Deploy your portfolio website to platforms like GitHub Pages, Netlify, or Vercel for public access.
+
 ---
 
 ## 📁 Folder Structure
