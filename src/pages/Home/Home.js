@@ -5,10 +5,28 @@ import Image1 from "../../assets/priyanshu1.jpg"
 import { FaHandPaper } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import {
+  Code,
+  Brush,
+  Zap,
+  LayoutGrid,
+  Palette,
+  Atom,
+  Database,
+  GitFork,
+  Github,
+  Monitor,
+  Paintbrush,
+  Cloud,
+  Server,
+  CloudUpload,
+  Search,
+} from 'lucide-react';
 
 const HeroSection = () => {
   return (
     <div className="Main">
+      {/* Hero Section */}
       <div className="hero">
         <div className="hero-left">
           <h1>
@@ -80,6 +98,37 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
+      {/* Skills Section */}
+      <section className="skills-section" id="skills">
+          <h2 className="skills-title">My Skill Set</h2>
+          <p className="skills-subtitle">Technologies and tools I use to craft professional web experiences:</p>
+
+          <div className="skills-grid">
+
+            <div className="skill-card"><Code size={28} style={{ color: '#e44d26' }} /><span className="skill-name">HTML</span></div>
+            <div className="skill-card"><Brush size={28} style={{ color: '#264de4' }} /><span className="skill-name">CSS</span></div>
+            <div className="skill-card"><Zap size={28} style={{ color: '#f0db4f' }} /><span className="skill-name">JavaScript</span></div>
+            <div className="skill-card"><Atom size={28} style={{ color: '#61DBFB' }} /><span className="skill-name">React</span></div>
+            <div className="skill-card"><LayoutGrid size={28} style={{ color: '#7952b3' }} /><span className="skill-name">Bootstrap</span></div>
+            <div className="skill-card"><Palette size={28} style={{ color: '#38bdf8' }} /><span className="skill-name">Tailwind CSS</span></div>
+            <div className="skill-card"><Server size={28} style={{ color: '#8892BF' }} /><span className="skill-name">PHP</span></div>
+            <div className="skill-card"><Paintbrush size={28} style={{ color: '#21759b' }} /><span className="skill-name">WordPress</span></div>
+            <div className="skill-card"><Search size={28} style={{ color: '#34a853' }} /><span className="skill-name">SEO</span></div>
+            <div className="skill-card"><Database size={28} style={{ color: '#00758f' }} /><span className="skill-name">MySQL</span></div>
+            <div className="skill-card"><Database size={28} style={{ color: '#47A248' }} /><span className="skill-name">MongoDB</span></div>
+            <div className="skill-card"><GitFork size={28} style={{ color: '#f1502f' }} /><span className="skill-name">Git</span></div>
+            <div className="skill-card"><Github size={28} style={{ color: '#333' }} /><span className="skill-name">GitHub</span></div>
+            <div className="skill-card"><Monitor size={28} style={{ color: '#007acc' }} /><span className="skill-name">VS Code</span></div>
+            <div className="skill-card"><Monitor size={28} style={{ color: '#f48024' }} /><span className="skill-name">Sublime Text</span></div>
+            <div className="skill-card"><Paintbrush size={28} style={{ color: '#00c4cc' }} /><span className="skill-name">Canva</span></div>
+            <div className="skill-card"><Palette size={28} style={{ color: '#a259ff' }} /><span className="skill-name">Figma</span></div>
+            <div className="skill-card"><CloudUpload size={28} style={{ color: '#000000' }} /><span className="skill-name">Vercel</span></div>
+            <div className="skill-card"><CloudUpload size={28} style={{ color: '#38b2ac' }} /><span className="skill-name">Netlify</span></div>
+            <div className="skill-card"><CloudUpload size={28} style={{ color: '#24292e' }} /><span className="skill-name">GitHub Pages</span></div>
+            <div className="skill-card"><Cloud size={28} style={{ color: '#ff69b4' }} /><span className="skill-name">InfinityFree</span></div>
+          </div>
+      </section>
+    
     </div>
   );
 };
