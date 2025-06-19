@@ -15,8 +15,10 @@ import {
   FaLinkedin,
   FaGithub,
   FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap,
-  FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma
+  FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity
 } from "react-icons/fa";
+import { TbBrandVercel } from "react-icons/tb";
+import { SiNetlify, SiCanva, SiSublimetext, SiTailwindcss } from "react-icons/si";
 import "./Resume.css";
 
 const Resume = () => {
@@ -60,11 +62,20 @@ const Resume = () => {
           <div><FaReact style={{ color: "#61DBFB" }} /> React</div>
           <div><FaPython style={{ color: "#3776AB" }} /> Python</div>
           <div><FaPhp style={{ color: "#777bb4" }} /> PHP</div>
-          <div><FaDatabase style={{ color: "#00618a" }} /> MySQL / MongoDB</div>
+          <div><FaDatabase style={{ color: "#00618a" }} /> MySQL</div>
+          <div><FaDatabase style={{ color: "#00618a" }} /> MongoDB</div>
           <div><FaGitAlt style={{ color: "#f1502f" }} /> Git</div>
           <div><FaGithub style={{ color: "#333" }} /> GitHub</div>
           <div><FaWordpress style={{ color: "#00749C" }} /> WordPress</div>
           <div><FaFigma style={{ color: "#F24E1E" }} /> Figma</div>
+          <div><SiTailwindcss style={{ color: "#38bdf8" }} /> Tailwind CSS</div>
+          <div><FaSitemap style={{ color: "#34a853" }} /> SEO</div>
+          <div><SiCanva style={{ color: "#00c4cc" }} /> Canva</div>
+          <div><SiNetlify style={{ color: "#38b2ac" }} /> Netlify</div>
+          <div><FaInfinity style={{ color: "#ff69b4" }} /> InfinityFree</div>
+          <div><SiSublimetext style={{ color: "#f48024" }} /> Sublime Text</div>
+          <div><TbBrandVercel style={{ color: "#000000" }} /> Vercel</div>
+          <div><FaGithub style={{ color: "#000000" }} /> Github Pages</div>
         </div>
     </section>
 
