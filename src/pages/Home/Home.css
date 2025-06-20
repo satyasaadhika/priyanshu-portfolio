@@ -124,24 +124,22 @@
 
 }
 /* About section style */
-
 .about-section {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 10%;
+  padding: 2rem 10%;
   flex-wrap: wrap;
   background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
 }
 
 .about-left img {
-  width: 350px;
-  border-radius: 28px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  width: 500px;
 }
 
 .about-right {
   max-width: 600px;
   padding-left: 2rem;
+  margin-top: 80px;
 }
 
 .about-right h2 {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Image from "../../assets/priyanshu.jpg"
-import Image1 from "../../assets/priyanshu1.jpg"
+import Image1 from "../../assets/image.png"
 import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import { TbBrandVercel } from "react-icons/tb";
@@ -64,12 +64,6 @@ const HeroSection = () => {
       <div className="about-section">
         <div className="about-left">
           <img src={Image1} alt="About me" />
-           <div className="floating-blocks">
-            <div className="block pink"></div>
-            <div className="block green"></div>
-            <div className="block purple"></div>
-            <div className="block blue"></div>
-          </div>
         </div>
 
         <div className="about-right">
