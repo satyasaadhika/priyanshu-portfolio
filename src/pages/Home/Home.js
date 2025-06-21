@@ -6,7 +6,7 @@ import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPytho
 import { Typewriter } from "react-simple-typewriter";
 import { TbBrandVercel } from "react-icons/tb";
 import { SiNetlify, SiCanva, SiSublimetext, SiTailwindcss } from "react-icons/si";
-import { Monitor, CloudUpload } from 'lucide-react';
+import { Monitor} from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -21,7 +21,7 @@ const HeroSection = () => {
             I'M <span className="highlight">Priyanshu Maurya</span>
           </h2>
           <h3>
-            <span className="role">
+            <span className="roletype">
               <Typewriter
                 words={[
                   "Full Stack Developer",
@@ -104,7 +104,6 @@ const HeroSection = () => {
             <div className="skill-card"><FaFigma size={28} style={{ color: '#a259ff' }} /><span className="skill-name">Figma</span></div>
             <div className="skill-card"><TbBrandVercel size={28} style={{ color: '#000000' }} /><span className="skill-name">Vercel</span></div>
             <div className="skill-card"><SiNetlify size={28} style={{ color: '#38b2ac' }} /><span className="skill-name">Netlify</span></div>
-            <div className="skill-card"><CloudUpload size={28} style={{ color: '#24292e' }} /><span className="skill-name">GitHub Pages</span></div>
             <div className="skill-card"><FaInfinity  size={28} style={{ color: '#ff69b4' }} /><span className="skill-name">InfinityFree</span></div>
           </div>
       </section>
