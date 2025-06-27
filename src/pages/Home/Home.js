@@ -2,13 +2,57 @@ import React from "react";
 import "./Home.css";
 import Image from "../../assets/priyanshu.jpg"
 import Image1 from "../../assets/image.png"
-import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity } from "react-icons/fa";
+import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity,FaBuilding, FaCertificate, FaLaptopCode } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import { TbBrandVercel } from "react-icons/tb";
 import { SiNetlify, SiCanva, SiSublimetext, SiTailwindcss } from "react-icons/si";
 import { Monitor} from 'lucide-react';
+import aryanLogo from '../../assets/aryan_computers.png'; 
+import earth5rLogo from '../../assets/Earth5R.png'; 
+import frontend from "../../assets/Certificate/Frontend-D.jpg";
+import backend from "../../assets/Certificate/Backend-D.jpg";
+import fullstack from "../../assets/Certificate/FS.jpg";
 
 const HeroSection = () => {
+const experiences = [
+  {
+    company: "Aryan Computers",
+    role: "Front-End Intern",
+    date: "Aug 2024 – Feb 2025 • Remote",
+    logo: aryanLogo, // Replace with your logo path
+    description:
+      "During this incredible journey, I had the opportunity to work on the frontend development of Aryan Computers and Exam Pioneer, utilizing technologies like HTML, CSS, Bootstrap, JavaScript, jQuery, and React.js. This internship has been a transformative experience, helping me enhance my responsibility, sincerity, and strong willingness to learn. I took on challenges with enthusiasm, honed my coordination and communication skills, and developed an exceptional attention to detail.",
+  },
+  {
+    company: "EARTH5R",
+    role: "AI & ML Content Volunteer",
+    date: "Apr 2024 – Jun 2024 • Remote",
+    logo: earth5rLogo, // Replace with your logo path
+    description:
+      "As an AI & ML content volunteer at EARTH5R, I contributed educational content that explained complex AI and ML concepts in simple and engaging ways. I researched cutting-edge topics and created informative articles, boosting both my technical knowledge and writing abilities. This experience strengthened my time management, research accuracy, and ability to communicate technical information clearly.",
+  },
+];
+const certificateData = [
+  {
+    title: "Meta Front-End Developer",
+    issued: "Issued by Meta · Coursera · Sep 2024",
+    image: frontend,
+    skills: "HTML, CSS, JavaScript, React, UX/UI Design",
+  },
+  {
+    title: "Meta Back-End Developer",
+    issued: "Issued by Meta · Coursera · Jul 2024",
+    image: backend,
+    skills: "Python, Django, Databases, APIs, Version Control",
+  },
+  {
+    title: "Meta Full Stack Developer",
+    issued: "Issued by Meta · Coursera · Jun 2024",
+    image: fullstack,
+    skills: "Front-End + Back-End combined, Full Stack Development",
+  },
+];
+
   return (
     <div className="Main">
       {/* Hero Section */}
@@ -72,7 +116,7 @@ const HeroSection = () => {
             Hello! I’m a passionate web developer focused on building responsive, user-friendly interfaces with modern tech. Proficient in interactive responsive web design with dynamic frontend, JSON APIs, Bootstrap and Tailwind, backend development using Python/Django, Node/Express, and PHP with MySQL and MongoDB database integrations
             Working knowledge of Figma, and UI/UX design and design principles. Working knowledge of React.js, React Router for Single Page Applications, React Hooks, Context API.
           </p>
-          <a href="https://priyanshu-portfolio-three.vercel.app/About" className="explore-btn">
+          <a href="/About" className="explore-btn">
             Explore Me <FaArrowRight className="btn-icon" />
           </a>
         </div>
@@ -107,7 +151,52 @@ const HeroSection = () => {
             <div className="skill-card"><FaInfinity  size={28} style={{ color: '#ff69b4' }} /><span className="skill-name">InfinityFree</span></div>
           </div>
       </section>
-    
+      {/* Experience Section */}
+      <section className="experience-section">
+        <h2 className="experience-title hover-underline">Experience</h2>
+        <p className="experience-subtitle">A glimpse into my professional journey — where I transformed skills into impact through real-world projects and collaborations.</p>
+        <div className="experience-container">
+          {experiences.map((exp, index) => (
+            <div className="experience-card" key={index}>
+              <div className="logo-box">
+                <img src={exp.logo} alt={`${exp.company} logo`} />
+              </div>
+              <div className="experience-content">
+                <h3>
+                  <FaBuilding className="icon" /> {exp.company}
+                </h3>
+                <p className="role">
+                  <FaLaptopCode className="icon" /> {exp.role}
+                </p>
+                <p className="date">{exp.date}</p>
+                <p className="description">{exp.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* certificate Section */}
+      <section className="certificates-section">
+        <h2 className="cert-title hover-underline"><FaCertificate /> Certificates</h2>
+        <div className="cert-grid">
+          {certificateData.map((cert, index) => (
+            <div className="cert-card hover-underline" key={index}>
+              <img src={cert.image} alt={cert.title} className="cert-img" />
+              <div className="cert-info">
+                <h3>{cert.title}</h3>
+                <p className="issued">{cert.issued}</p>
+                <p className="skills"><strong>Skills:</strong> {cert.skills}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="cert-btn-box">
+          <a href="/Certificates" className="view-all-btn">
+            View All Certificates <FaArrowRight />
+          </a>
+        </div>
+      </section>
+      
     </div>
   );
 };
