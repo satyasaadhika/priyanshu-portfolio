@@ -4,6 +4,7 @@
   min-height: 100vh;
   color: #1a1a1a;
   font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .resume-title {

@@ -196,6 +196,7 @@ const certificateData = [
           </a>
         </div>
       </section>
+      {/* Project Section */}
       
     </div>
   );
