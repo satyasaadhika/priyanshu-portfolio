@@ -1,0 +1,148 @@
+/* Overall container */
+.certificate-section {
+  padding: 2rem 8rem;
+  background-color: #e0f7fa;
+}
+
+/* Page heading */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  color: #0e4a73;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: #0e4a73;
+  transition: 0.4s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.page-title:hover::after {
+  width: 40%;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Grid layout - 3 cards per row */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+  flex-direction: column;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image styling */
+.card-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Content inside card */
+.card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Headings and text */
+.card-content h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+/* View button */
+.view-btn {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgb(26, 162, 241);
+  color: white;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.view-btn:hover {
+  background-color: #0e8cd8;
+}
+
+/* Media Queries for responsive behavior */
+@media screen and (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .certificate-section {
+    padding: 2rem 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content h2 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.85rem;
+  }
+
+  .view-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
