@@ -1,0 +1,80 @@
+.project-section {
+  padding: 20px 20px;
+  background: #e0f7fa;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.project-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.project-section h2 span {
+  color: #0e4a73;
+}
+
+.project-intro {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1c1c1e;
+  border-radius: 15px;
+  padding: 20px;
+  width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: rgb(26, 162, 241);
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  display: block;
+  font-size: 0.85rem;
+  color: #e1e1e1;
+  margin-bottom: 15px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgb(26, 162, 241);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+.project-buttons a:hover {
+  background-color: #0e8cd8;
+}
