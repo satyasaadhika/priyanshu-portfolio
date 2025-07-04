@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Image from "../../assets/priyanshu.jpg"
 import Image1 from "../../assets/image.png"
-import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity,FaBuilding, FaCertificate, FaLaptopCode } from "react-icons/fa";
+import { FaHandPaper, FaArrowRight , FaGithub, FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaGitAlt,  FaDatabase, FaPhp, FaWordpress, FaFigma, FaSitemap, FaInfinity,FaBuilding, FaCertificate, FaLaptopCode,FaExternalLinkAlt,FaFolderOpen,FaBriefcase,FaTools } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import { TbBrandVercel } from "react-icons/tb";
 import { SiNetlify, SiCanva, SiSublimetext, SiTailwindcss } from "react-icons/si";
@@ -12,6 +12,9 @@ import earth5rLogo from '../../assets/Earth5R.png';
 import frontend from "../../assets/Certificate/Frontend-D.jpg";
 import backend from "../../assets/Certificate/Backend-D.jpg";
 import fullstack from "../../assets/Certificate/FS.jpg";
+import kingsukh from '../../assets/kingsukh-guest-house.png';
+import capturer from '../../assets/capturer.png';
+import easybank from '../../assets/easy-bank-website.png';
 
 const HeroSection = () => {
 const experiences = [
@@ -50,6 +53,35 @@ const certificateData = [
     issued: "Issued by Meta · Coursera · Jun 2024",
     image: fullstack,
     skills: "Front-End + Back-End combined, Full Stack Development",
+  },
+];
+const projects = [
+  {
+    title: "Kingsukh Guest House",
+    description:
+      "This is a clean, modern, and responsive website created to represent the Kingsukh Guest House online. It features a user-friendly layout that allows visitors to explore room options, amenities, and important contact information with ease. ",
+    techStack: "React.js, JSX, CSS, Responsive Design, React Router, Component-Based Architecture, Modern UI Design",
+    github: "https://github.com/satyasaadhika/kingsukh-guest-house.git",
+    demo: "https://kingsukh-guest-house-iota.vercel.app/",
+    image: kingsukh,
+  },
+  {
+    title: "Capturer Photo Gallary",
+    description:
+      "This project is a fully responsive and visually engaging portfolio website designed specifically for photographers.",
+    techStack: "HTML, CSS, JavaScript, Bootstrap 5.2.0, Responsive Design, UI/UX Principles",
+    github: "https://github.com/satyasaadhika/capturer.git",
+    demo: "https://capturer-moments.vercel.app/",
+    image: capturer,
+  },
+  {
+    title: "Easy Bank",
+    description:
+      "This project is a user interface (UI) design for a banking website called Easy Bank. The focus is on creating a clean, modern, and easy-to-use layout that makes banking services simple to understand and access. ",
+    techStack: "HTML, CSS, Responsive Design, UI/UX Principles",
+    github: "https://github.com/satyasaadhika/easy-bank.git",
+    demo: "https://satyasaadhika.github.io/easy-bank/",
+    image: easybank,
   },
 ];
 
@@ -123,7 +155,7 @@ const certificateData = [
       </div>
       {/* Skills Section */}
       <section className="skills-section" id="skills">
-          <h2 className="skills-title">My Skill Set</h2>
+          <h2 className="skills-title"> <FaTools/> My Skill Set</h2>
           <p className="skills-subtitle">Technologies and tools I use to craft professional web experiences:</p>
 
           <div className="skills-grid">
@@ -151,30 +183,6 @@ const certificateData = [
             <div className="skill-card"><FaInfinity  size={28} style={{ color: '#ff69b4' }} /><span className="skill-name">InfinityFree</span></div>
           </div>
       </section>
-      {/* Experience Section */}
-      <section className="experience-section">
-        <h2 className="experience-title hover-underline">Experience</h2>
-        <p className="experience-subtitle">A glimpse into my professional journey — where I transformed skills into impact through real-world projects and collaborations.</p>
-        <div className="experience-container">
-          {experiences.map((exp, index) => (
-            <div className="experience-card" key={index}>
-              <div className="logo-box">
-                <img src={exp.logo} alt={`${exp.company} logo`} />
-              </div>
-              <div className="experience-content">
-                <h3>
-                  <FaBuilding className="icon" /> {exp.company}
-                </h3>
-                <p className="role">
-                  <FaLaptopCode className="icon" /> {exp.role}
-                </p>
-                <p className="date">{exp.date}</p>
-                <p className="description">{exp.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
       {/* certificate Section */}
       <section className="certificates-section">
         <h2 className="cert-title hover-underline"><FaCertificate /> Certificates</h2>
@@ -196,8 +204,58 @@ const certificateData = [
           </a>
         </div>
       </section>
+      {/* Experience Section */}
+      <section className="experience-section">
+        <h2 className="experience-title hover-underline"><FaBriefcase/> Experience</h2>
+        <p className="experience-subtitle">A glimpse into my professional journey — where I transformed skills into impact through real-world projects and collaborations.</p>
+        <div className="experience-container">
+          {experiences.map((exp, index) => (
+            <div className="experience-card" key={index}>
+              <div className="logo-box">
+                <img src={exp.logo} alt={`${exp.company} logo`} />
+              </div>
+              <div className="experience-content">
+                <h3>
+                  <FaBuilding className="icon" /> {exp.company}
+                </h3>
+                <p className="role">
+                  <FaLaptopCode className="icon" /> {exp.role}
+                </p>
+                <p className="date">{exp.date}</p>
+                <p className="description">{exp.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* Project Section */}
-      
+      <section className="project-section">
+            <h2><span>< FaFolderOpen/> Recent</span> Works</h2>
+            <p className="project-intro">Here are a few projects I’ve worked on recently.</p>
+            <div className="project-grid">
+              {projects.map((project, index) => (
+                <div className="project-card" key={index}>
+                  <img src={project.image} alt={project.title} />
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <span className="tech-stack">{project.techStack}</span>
+                  <div className="project-buttons">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <FaGithub /> GitHub
+                    </a>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <FaExternalLinkAlt /> Demo
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="cert-btn-box">
+              <a href="/Projects" className="view-all-btn">
+                View All Projects<FaArrowRight />
+              </a>
+            </div>
+      </section>
     </div>
   );
 };
